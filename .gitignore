@@ -2,3 +2,4 @@
 *.txt
 *.html
 !requirements.txt
+/venv/
