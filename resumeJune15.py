@@ -2,6 +2,8 @@ from fpdf import FPDF
 from datetime import datetime
 import os
 
+
+
 # Enhanced resume data with all projects and links
 resume_data = {
     "name": "Majd Adel Abualnour",
@@ -202,7 +204,7 @@ resume_data = {
         }
     ]
 }
-
+your_name = str(resume_data["name"]).replace(' ' , '_')
 
 class CVGenerator(FPDF):
     def __init__(self):
@@ -360,10 +362,10 @@ def generate_pdf_cv():
             pdf.multi_cell(0, 4, community['details'])
         pdf.ln(2)
     
-    pdf.output('Majd_Abualnour_CV.pdf')
+    pdf.output(f'{your_name}_CV.pdf')
 
 def generate_html_cv():
-    with open('Majd_Abualnour_CV.html', 'w', encoding='utf-8') as f:
+    with open(f'{your_name}_CV.html', 'w', encoding='utf-8') as f:
         f.write('''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -636,7 +638,7 @@ def generate_html_cv():
 </html>''')
 
 def generate_txt_cv():
-    with open('Majd_Abualnour_CV.txt', 'w', encoding='utf-8') as f:
+    with open(f'{your_name}_CV.txt', 'w', encoding='utf-8') as f:
         # Header
         f.write(resume_data['name'] + '\n')
         f.write('=' * len(resume_data['name']) + '\n\n')
@@ -716,9 +718,9 @@ def generate_all_formats():
     generate_html_cv()
     generate_txt_cv()
     print("Successfully generated:")
-    print("- Majd_Abualnour_CV.pdf (Professional PDF version)")
-    print("- Majd_Abualnour_CV.html (Interactive web version)")
-    print("- Majd_Abualnour_CV.txt (ATS-friendly text version)")
+    print(f"- {your_name}_CV.pdf (Professional PDF version)")
+    print(f"- {your_name}_CV.html (Interactive web version)")
+    print(f"- {your_name}_CV.txt (ATS-friendly text version)")
     print("\nYour CV now includes all 7 projects with live links!")
 
 if __name__ == "__main__":
