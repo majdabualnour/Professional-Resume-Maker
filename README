@@ -1,7 +1,4 @@
 
-
-```markdown
-
 # Ultimate CV Generator for Majd Abualnour
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
@@ -120,18 +117,3 @@ Majd Abualnour
 Email: majdapoalnoor@gmail.com  
 Portfolio: [portfolio-5aue.vercel.app](https://portfolio-5aue.vercel.app/)  
 LinkedIn: [linkedin.com/in/majd-abualnour](https://www.linkedin.com/in/majd-abu-al-nour-500aba21b)
-```
-
-This README includes:
-1. Clear badges showing technologies used
-2. Comprehensive feature list
-3. Easy-to-follow installation instructions
-4. Visual examples of output
-5. Customization guidelines
-6. Technical implementation details
-7. License and contact information
-
-The formatting uses GitHub-Flavored Markdown for optimal display on your repository page. You can further enhance it by:
-- Adding actual screenshot URLs
-- Including a changelog section if you plan to maintain versions
-- Adding a "Special Thanks" section for any collaborators
